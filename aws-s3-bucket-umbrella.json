@@ -5,19 +5,19 @@
 "Sid": "",
 "Effect": "Allow",
 "Principal": {
-"AWS": "arn:aws:iam::211998231570:user/logs"
+"AWS": "arn:aws:iam::568526795995:user/logs"
 },
 "Action": "s3:PutObject",
-"Resource": "arn:aws:s3:::bucketname/*"
+"Resource": "arn:aws:s3:::myawsumbrellabucket/*"
 },
 {
 "Sid": "",
 "Effect": "Deny",
 "Principal": {
-"AWS": "arn:aws:iam::211998231570:user/logs"
+"AWS": "arn:aws:iam::568526795995:user/logs"
 },
 "Action": "s3:GetObject",
-"Resource": "arn:aws:s3:::bucketname/*"
+"Resource": "arn:aws:s3:::myawsumbrellabucket/*"
 },
 
 {
@@ -25,21 +25,21 @@
 "Effect": "Allow",
 "Principal":
 
-{ "AWS": "arn:aws:iam::211998231570:user/logs" }
+{ "AWS": "arn:aws:iam::568526795995:user/logs" }
 
 ,
 "Action": "s3:GetBucketLocation",
-"Resource": "arn:aws:s3:::bucketname"
+"Resource": "arn:aws:s3:::myawsumbrellabucket"
 },
 
 {
 "Sid": "",
 "Effect": "Allow",
 "Principal": {
-"AWS": "arn:aws:iam::211998231570:user/logs"
+"AWS": "arn:aws:iam::568526795995:user/logs"
 },
 "Action": "s3:ListBucket",
-"Resource": "arn:aws:s3:::bucketname"
+"Resource": "arn:aws:s3:::myawsumbrellabucket"
 }
 ]
 }
