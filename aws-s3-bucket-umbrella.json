@@ -1,0 +1,45 @@
+{
+"Version": "2008-10-17",
+"Statement": [
+{
+"Sid": "",
+"Effect": "Allow",
+"Principal": {
+"AWS": "arn:aws:iam::568526795995:user/logs"
+},
+"Action": "s3:PutObject",
+"Resource": "arn:aws:s3:::bucketname/*"
+},
+{
+"Sid": "",
+"Effect": "Deny",
+"Principal": {
+"AWS": "arn:aws:iam::568526795995:user/logs"
+},
+"Action": "s3:GetObject",
+"Resource": "arn:aws:s3:::bucketname/*"
+},
+
+{
+"Sid": "",
+"Effect": "Allow",
+"Principal":
+
+{ "AWS": "arn:aws:iam::568526795995:user/logs" }
+
+,
+"Action": "s3:GetBucketLocation",
+"Resource": "arn:aws:s3:::bucketname"
+},
+
+{
+"Sid": "",
+"Effect": "Allow",
+"Principal": {
+"AWS": "arn:aws:iam::568526795995:user/logs"
+},
+"Action": "s3:ListBucket",
+"Resource": "arn:aws:s3:::bucketname"
+}
+]
+}
