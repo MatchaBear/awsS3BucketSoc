@@ -8,7 +8,7 @@
 "AWS": "arn:aws:iam::211998231570:user/soc"
 },
 "Action": "s3:PutObject",
-"Resource": "arn:aws:s3:::umbrellalog/*"
+"Resource": "arn:aws:s3:::logsforumbrella/*"
 },
 {
 "Sid": "",
@@ -17,7 +17,7 @@
 "AWS": "arn:aws:iam::211998231570:user/soc"
 },
 "Action": "s3:GetObject",
-"Resource": "arn:aws:s3:::umbrellalog/*"
+"Resource": "arn:aws:s3:::logsforumbrella/*"
 },
 
 {
@@ -29,7 +29,7 @@
 
 ,
 "Action": "s3:GetBucketLocation",
-"Resource": "arn:aws:s3:::umbrellalog"
+"Resource": "arn:aws:s3:::logsforumbrella"
 },
 
 {
@@ -39,7 +39,7 @@
 "AWS": "arn:aws:iam::211998231570:user/soc"
 },
 "Action": "s3:ListBucket",
-"Resource": "arn:aws:s3:::umbrellalog"
+"Resource": "arn:aws:s3:::logsforumbrella"
 }
 ]
 }
